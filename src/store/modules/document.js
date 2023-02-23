@@ -1,23 +1,23 @@
 const state = {
-  lastId: 4,
+  lastId: 10,
   sortList: [],
-  draggableGroup: { name: 'document' },
+  draggableGroup: { name: 'document', page: 'document' },
   list: [
     {
-      id: 1,
-      title: "Документ-1",
+      id: 7,
+      title: "Документ-7",
       required: false,
       description: ''
     },
     {
-      id: 2,
-      title: "Документ-2",
+      id: 8,
+      title: "Документ-8",
       required: true,
       description: ''
     },
     {
-      id: 3,
-      title: "Документ-3",
+      id: 9,
+      title: "Документ-9",
       required: false,
       description: 'Для всех'
     }
@@ -62,7 +62,7 @@ const getters = {
   },
 
   getDocumentLastId: state => state.lastId,
-  getDocumentDraggableGroup: state => state.draggableGroup
+  getDocumentDraggableGroup: state => state.draggableGroup,
 }
 
 export default {

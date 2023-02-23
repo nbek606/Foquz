@@ -43,7 +43,8 @@
 
     methods: {
       remove (item) {
-        if (item.typeId) {
+        console.log(this.group)
+        if (this.group.page == 'typeDocument') {
           this.$store.dispatch('typeDocumentRemoveItem', item.id)
         } else {
           this.$store.dispatch('documentRemoveItem', item.id)

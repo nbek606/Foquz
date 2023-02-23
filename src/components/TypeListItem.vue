@@ -9,10 +9,11 @@
     <div 
       class="childs"
       :class="{ 'childs-active': showChilds }"
+      v-if="isDocuments"
     >
       <DocumentList 
         :list="item.documents"
-        :group="documentDraggableGroup"
+        :group="typeDocumentDraggableGroup"
       />
     </div> 
   </div>
@@ -44,7 +45,7 @@ import { mapGetters } from 'vuex'
 
     computed: {
       ...mapGetters({
-        documentDraggableGroup: 'getDocumentDraggableGroup'
+        typeDocumentDraggableGroup: 'getTypeDocumentDraggableGroup'
       }),
 
       isDocuments () {

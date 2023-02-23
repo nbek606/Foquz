@@ -1,6 +1,7 @@
 const state = {
-  lastId: 3,
-  draggableGroup: { name: 'type', pull: 'clone', put: true},
+  lastId: 4,
+  draggableGroup: { name: 'type', pull: 'clone', put: true, page: "type"},
+  documentDraggableGroup: { name: 'document', page: 'typeDocument' },
   list: [
     {
       id: 1,
@@ -108,7 +109,8 @@ const getters = {
   },
 
   getTypeLastId: state => state.lastId,
-  getTypeDraggableGroup: state => state.draggableGroup
+  getTypeDraggableGroup: state => state.draggableGroup,
+  getTypeDocumentDraggableGroup: state => state.documentDraggableGroup
 }
 
 export default {
