@@ -1,4 +1,4 @@
-# drag-and-drop
+# Foquz
 
 ## Project setup
 ```
